@@ -1,5 +1,1 @@
-# holbertonschool-shell
-#Betty
-# Betty
-# Betty
-# Betty
+hello world
