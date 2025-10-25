@@ -2,17 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* main - Prints wether a number is positive, negative or zero
+/* main - Prints if a number is positive, negative or zero
  *
  * Return: 0
  */
 int main(void)
 {
-	int n;
+	int numbers[] = {98, -25, 0};
+	int i;
 
-	srand(time(0));
-	n=rand() - RAND_MAX / 2;
-
+	for (i = 0; i < 3; i++)
+	{
+		int n = numbers[i];
 
 	if (n > 0)
 		printf("%d is positive\n", n);
@@ -20,6 +21,7 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is negative\n", n);
+	}
 
 	return (0);
 }
