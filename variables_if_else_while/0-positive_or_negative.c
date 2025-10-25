@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /* main - Prints if a number is positive, negative or zero
  *
@@ -8,21 +6,33 @@
  */
 int main(void)
 {
-	int numbers[] = {98, -25, 0};
-	int i;
+	int n;
 
-	for (i = 0; i < 3; i++)
-	{
-		int n = numbers[i];
 
+	n = 98;
 	if (n > 0)
 		printf("%d is positive\n", n);
 	else if (n == 0)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is negative\n", n);
-	}
+	
+	n = -25;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else
+		printf("%d is negative\n", n);
 
-	return (0);
+	n = 0;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else
+		printf("%d is negative\n", n);
+
+	return 0;
 }
 	
